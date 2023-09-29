@@ -8,6 +8,7 @@
     <meta name="robots" content="noindex, follow" />
     <meta name="description" content="Paras Shenmare Portfolio Website">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <base target="_top">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.jpg">
     <!-- CSS ============================================ -->
@@ -1314,21 +1315,21 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" id="contact-form" method="post"
-                                    action="https://docs.google.com/forms/d/e/1FAIpQLScu-q_6OyUFUjBKRGVeckRMdESU_IyNCgx4joCrzs62laiVSQ/formResponse">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="form" method="post"
+                                    action="https://script.google.com/macros/s/AKfycbybt-9UeC3SpsUpV4mWKysJ36jus3Z7_8T_EZeI8GFeipAdhZdaIdgzG77IrfZEQl3ZQg/exec">
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
                                             <label for="entry.315171100">Name</label>
-                                            <input class="form-control form-control-lg" name="entry.315171100"
-                                                type="text" placeholder="Your Name">
+                                            <input class="form-control form-control-lg" name="Name" type="text"
+                                                placeholder="Your Name" required>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="entry.1192439775">Phone Number</label>
-                                            <input class="form-control" name="entry.1192439775" type="text"
+                                            <label for="entry.1192439775">Phone</label>
+                                            <input class="form-control" name="Phone" type="text"
                                                 placeholder="0123456789">
                                         </div>
                                     </div>
@@ -1336,23 +1337,23 @@
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="entry.1221001317">Email</label>
-                                            <input class="form-control form-control-sm" name="entry.1221001317"
-                                                type="text" placeholder="email@example.com">
+                                            <input class="form-control form-control-sm" name="Email" type="text"
+                                                placeholder="email@example.com" required>
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="entry.294641633">Subject</label>
-                                            <input class="form-control form-control-sm" name="entry.294641633"
-                                                type="text" placeholder="Topic">
+                                            <input class="form-control form-control-sm" name="Subject" type="text"
+                                                placeholder="Topic">
                                         </div>
                                     </div>
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
                                             <label for="entry.893070829">Message</label>
-                                            <textarea name="entry.893070829" cols="30" rows="10"
+                                            <textarea name="Message" cols="30" rows="10"
                                                 placeholder="Your Message"></textarea>
                                         </div>
                                     </div>
@@ -1364,6 +1365,19 @@
                                         </button>
                                     </div>
                                 </form>
+                                <script>
+                                    const scriptURL = 'https://script.google.com/macros/s/AKfycbybt-9UeC3SpsUpV4mWKysJ36jus3Z7_8T_EZeI8GFeipAdhZdaIdgzG77IrfZEQl3ZQg/exec'
+                                    const form = document.querySelector('#form')
+
+                                    form.addEventListener('submit', e => {
+                                        e.preventDefault()
+
+                                        console.log(form)
+                                        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                                            .then(response => { alert('Form has been successfully submitted!', response) })
+                                            .catch(error => alert('There was an error in submitting form!', error.message))
+                                    })
+                                </script>
                             </div>
                         </div>
                     </div>
