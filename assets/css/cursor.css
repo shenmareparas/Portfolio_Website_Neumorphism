@@ -6,6 +6,7 @@
   left: 50%;
   border-radius: 50%;
   opacity: 0;
+  z-index: 10;
   transform: translate(-50%, -50%);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
@@ -20,4 +21,4 @@
   width: 40px;
   height: 40px;
   background-color: rgba(254, 116, 88, 0.4);
-}/
+}/*# sourceMappingURL=cursor.css.map */
