@@ -11047,7 +11047,7 @@ div#featured-project-carousel {
         left: 0;
         top: -130px;
         background: transparent;
-        background-image: url(../images/icons/quote.png);
+        background-image: url(../images/icons/quote.webp);
         background-size: cover;
         z-index: -1;
         opacity: 0.5;
