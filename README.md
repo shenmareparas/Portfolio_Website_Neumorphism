@@ -4,22 +4,22 @@ Explore my work, projects, and skills through this interactive website that show
 ## Screenshots
 <table>
   <tr>
-    <td><img alt="Home" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/b862da19-e1e8-4f02-8125-611f6cfe69c3"></td>
+    <td><img width="1710" alt="Home" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/9504448d-498f-4c37-96aa-9b61cc78237f"></td>
   </tr>
   <tr>
-    <td><img width="1710" alt="Features" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/64bde93a-32fc-4242-99d0-1a939e498bdc"></td>
+    <td><img width="1710" alt="Features" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/391e7d35-c073-4a75-8664-758e74f32495"></td>
   </tr>
   <tr>
-    <td><img width="1710" alt="Projects" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/82197b8e-2d90-43da-be94-8aa6d4c3ec43"></td>
+    <td><img width="1710" alt="Projects" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/97451e54-5587-43c7-a331-592ef85ecbb7"></td>
   </tr>
    <tr>
-    <td><img width="1710" alt="Resume" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/19bf931a-09d6-46c1-9e25-242715afa5df"></td>
+    <td><img width="1710" alt="Resume" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/11067922-2209-484f-9676-9a9d387d927b"></td>
   </tr>
    <tr>
-    <td><img width="1710" alt="Testimonial" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/197bcfcd-6e8d-41c2-9517-e319ddcd9129"></td>
+    <td><img width="1710" alt="Testimonial" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/207aa54c-a8fc-4791-9787-954acd33ad13"></td>
   </tr>
    <tr>
-    <td><img width="1710" alt="Contact" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/7976c4be-431b-4373-8f4d-0b6de42ec2fb"></td>
+    <td><img width="1710" alt="Contact" src="https://github.com/shenmareparas/Portfolio_Website_Neumorphism/assets/112749923/e648a916-c8c1-4d2b-9d5b-1688449e504b"></td>
   </tr>
 </table>
 
