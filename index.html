@@ -4,9 +4,17 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Paras's Portfolio</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="Paras Shenmare Portfolio Website">
+    <title>Paras Shenmare</title>
+
+    <!-- Security -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
+    <!-- SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="description"
+        content="Paras Shenmare's Portfolio - Software Engineer and App Developer showcasing projects and skills">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="google-site-verification" content="BL8qYWOaDd-2ODnXJxJU1Zr0LjTdtjPBvde1lJnhje0" />
     <base target="_top">
@@ -43,7 +51,7 @@
     </script>
     <!-- Ad Sense -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1620835257397609"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
 </head>
 
 <body class="template-color-1 spybody white-version" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -57,7 +65,8 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="#" id="changeTheme">
-                            <img src="assets/images/profile.webp" draggable="false" alt="logo">
+                            <i class="feather-sun" id="lightIcon"></i>
+                            <i class="feather-moon" id="darkIcon"></i>
                         </a>
                     </div>
                     <script src="theme.js"></script>
@@ -151,8 +160,13 @@
                                     </path>
                                 </svg></a>
                         </li>
-                        <li class="twitter"><a href="https://twitter.com/parasshenmare" target="_blank"><i
-                                    data-feather="twitter"></i></a>
+                        <li class="X"><a href="https://x.com/parasshenmare" target="_blank"><svg
+                                    xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50"
+                                    viewBox="0 0 50 50" stroke="currentColor">
+                                    <path
+                                        d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z">
+                                    </path>
+                                </svg></a>
                     </ul>
                 </div>
                 <!-- end -->
@@ -189,10 +203,9 @@
                                     </h1>
 
                                     <div>
-                                        <p class="description">I am a creative App Developer with a proven
-                                            track record of developing and deploying successful user friendly apps on
-                                            Google Play
-                                            Store, garnering over 150K+ downloads & over 5K+ daily website traffic.</p>
+                                        <p class="description">I am a creative App Developer with a with
+                                            a portfolio of apps<br>on Google Play Store that have garnered over<br>
+                                            400K+ downloads & over 5K+ daily website traffic.</p>
                                     </div>
                                 </div>
                                 <a class="rn-btn" target="_blank"
@@ -204,14 +217,16 @@
                                         <div class="social-share-inner-left">
                                             <span class="title">find me on</span>
                                             <ul class="social-share d-flex liststyle">
-                                                <li class="linkedin"><a href="https://www.linkedin.com/in/parasshenmare"
+                                                <li class="linkedin" title="Linkedin"><a
+                                                        href="https://www.linkedin.com/in/parasshenmare"
                                                         target="_blank"><i data-feather="linkedin"></i></a>
                                                 </li>
                                                 </li>
-                                                <li class="github"><a href="https://github.com/shenmareparas"
-                                                        target="_blank"><i data-feather="github"></i></a>
+                                                <li class="github" title="Github"><a
+                                                        href="https://github.com/shenmareparas" target="_blank"><i
+                                                            data-feather="github"></i></a>
                                                 </li>
-                                                <li class="google_playstore"><a
+                                                <li class="google_playstore" title="Google Play Store"><a
                                                         href="https://play.google.com/store/apps/dev?id=5625933656259473047"
                                                         target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
                                                             y="0px" width="50" height="50" viewBox="0 0 50 50"
@@ -220,8 +235,14 @@
                                                                 d="M 6.78125 2 C 6.769531 2.003906 6.761719 2.027344 6.75 2.03125 C 6.722656 2.035156 6.683594 2.023438 6.65625 2.03125 C 6.445313 2.054688 6.25 2.140625 6.09375 2.28125 C 5.421875 2.648438 5 3.402344 5 4.21875 L 5 46 C 5 46.621094 5.273438 47.273438 5.78125 47.65625 C 6.015625 47.917969 6.371094 48.035156 6.71875 47.96875 C 7.175781 47.992188 7.65625 47.890625 8.0625 47.65625 C 8.910156 47.164063 26.21875 37.15625 26.21875 37.15625 L 35.25 31.9375 C 35.269531 31.929688 35.292969 31.917969 35.3125 31.90625 L 35.4375 31.84375 C 35.4375 31.84375 35.558594 31.78125 35.5625 31.78125 C 35.574219 31.769531 35.582031 31.761719 35.59375 31.75 C 35.863281 31.59375 43.261719 27.335938 44.28125 26.75 C 44.984375 26.34375 45.542969 25.683594 45.53125 24.875 C 45.519531 24.066406 44.949219 23.4375 44.3125 23.09375 C 43.960938 22.90625 41.679688 21.601563 39.5625 20.375 C 37.445313 19.148438 35.4375 17.96875 35.4375 17.96875 L 26.21875 12.65625 C 26.21875 12.65625 9.457031 2.976563 8.46875 2.40625 C 8.121094 2.207031 7.726563 2.046875 7.34375 2 C 7.152344 1.976563 6.96875 1.96875 6.78125 2 Z M 7 4.6875 L 27.375 24.90625 L 7 45.125 Z M 11.75 6.59375 C 16.835938 9.53125 25.21875 14.375 25.21875 14.375 L 33.28125 19.03125 L 28.78125 23.5 Z M 35.0625 20.0625 C 35.542969 20.34375 36.765625 21.054688 38.5625 22.09375 C 40.679688 23.320313 42.851563 24.5625 43.375 24.84375 C 43.425781 24.871094 43.410156 24.886719 43.4375 24.90625 C 43.398438 24.933594 43.386719 24.941406 43.28125 25 C 42.320313 25.554688 36.089844 29.171875 35.09375 29.75 L 30.1875 24.90625 Z M 28.78125 26.28125 L 33.3125 30.78125 L 25.21875 35.4375 C 25.21875 35.4375 17.054688 40.148438 11.78125 43.1875 Z">
                                                             </path>
                                                         </svg></a>
-                                                <li class="twitter"><a href="https://twitter.com/parasshenmare"
-                                                        target="_blank"><i data-feather="twitter"></i></a>
+                                                <li class="X" title="X"><a href="https://x.com/parasshenmare"
+                                                        target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px"
+                                                            y="0px" width="50" height="50" viewBox="0 0 50 50"
+                                                            stroke="currentColor">
+                                                            <path
+                                                                d="M 5.9199219 6 L 20.582031 27.375 L 6.2304688 44 L 9.4101562 44 L 21.986328 29.421875 L 31.986328 44 L 44 44 L 28.681641 21.669922 L 42.199219 6 L 39.029297 6 L 27.275391 19.617188 L 17.933594 6 L 5.9199219 6 z M 9.7167969 8 L 16.880859 8 L 40.203125 42 L 33.039062 42 L 9.7167969 8 z">
+                                                            </path>
+                                                        </svg></a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -230,13 +251,16 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img alt="Flutter"
+                                                <li title="Flutter"><img alt="Flutter"
                                                         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxsaW5lYXJHcmFkaWVudCBpZD0iZ0ZUT3hGcEdNdHJUd0tteUptRFZtYV9wQ3ZJZm1jdFJhWThfZ3IxIiB4MT0iMzQuMzEiIHgyPSIyMS4yMjMiIHkxPSI0Ny4zMSIgeTI9IjM0LjIyMyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIG9mZnNldD0iMCIgc3RvcC1jb2xvcj0iIzAxNzZkMCI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjQ1NCIgc3RvcC1jb2xvcj0iIzAyNzVjZSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjYxNyIgc3RvcC1jb2xvcj0iIzA0NzJjNyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjczMyIgc3RvcC1jb2xvcj0iIzA3NmJiYyI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjgyNyIgc3RvcC1jb2xvcj0iIzBkNjNhYiI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjkwNyIgc3RvcC1jb2xvcj0iIzEzNTg5NSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iLjkzMyIgc3RvcC1jb2xvcj0iIzE2NTM4YyI+PC9zdG9wPjwvbGluZWFyR3JhZGllbnQ+PHBvbHlnb24gZmlsbD0idXJsKCNnRlRPeEZwR010clR3S215Sm1EVm1hX3BDdklmbWN0UmFZOF9ncjEpIiBwb2ludHM9IjM3LDQ0IDI1LDQ0IDE0LDMzIDIwLDI3Ij48L3BvbHlnb24+PHBvbHlnb24gZmlsbD0iIzUwZTZmZiIgcG9pbnRzPSI1LDI0IDI1LDQgMzcsNCAxMSwzMCI+PC9wb2x5Z29uPjxwb2x5Z29uIGZpbGw9IiM1MGU2ZmYiIHBvaW50cz0iMzcsMjIgMjAsMzkgMTQsMzMgMjUsMjIiPjwvcG9seWdvbj48cmVjdCB3aWR0aD0iOC40ODUiIGhlaWdodD0iOC40ODUiIHg9IjE1Ljc1NyIgeT0iMjguNzU3IiBmaWxsPSIjMzVjMWYxIiB0cmFuc2Zvcm09InJvdGF0ZSgtNDUuMDAxIDIwIDMzKSI+PC9yZWN0Pgo8L3N2Zz4=" />
                                                 </li>
-                                                <li><img alt="Python"
+                                                <li title="Kotlin"><img alt="Kotlin"
+                                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAADtUlEQVR4nO2XW0hTcRzH10NURhFEQRBERFJ2Q7vSY9lDBBU6W1lWqK0sNXfRTc/OmdPptozKzKKXHoJ6KijoIWhRdDsQ9eK2M93cdFtE4ZyXTKakv/ivztzlnF1o21lwvvB5/3zOn/PwEwj48ePHLysnxJxQwkAR5oAauQuaaz1xua+4O/qzfSX4DYv+Df3CV0kHFLTZoVjFHFGMOeBinIi7igcjXnwXICbaVmVWHm2T3gb57TYoYokQqpxQVc8c0al8PErLByNaV2dOng5AbGu3s0aUYA441zAYJt+heD4+hO8Ok6f5oV2TGfnQgECEzgZHVQ7ml8CcUK4YCMhr699MDBF7GOVpxlrWgt+Qk175yADEVp0NjuBsLzEAyqYX49/jyM9FrAO/Pid98kwBiC06OxzGo1+iFP/s/0rsnklEPhihyWUKSI08WwBis84Gh4i5CBHeM2WVimddkjLwqfMTDkCMajaAX5/iL09vxTUrsEbobXCQcEAxTk1T0sqZwboKQLgkZ8BHJBcxot4Ik7ocoyDl67bA8uu9kMcSsV3XM22SiX/R8jTuurMwnMRLjDbnpvbLhwYglt2wQp4h4gUM1MzH+vNR8kEk5TCMF3AoHxKAWNI5F5Gnt86+U1yaYpUPRlSAl9jBkXxEAGLxTSog/7Kx1h9XPgQvvpPp502zPEPAvG4zPJR3TPbXVINLcjrhAMSQag94iUx9eXqh8rcscEd5Y8JUcR0Q/dVScEnLkovA9sJYxuQFAsGCLjrADFewrnFansZ2sQHc0pMJB3xTFmZOHm1JJwWLbppmW4lbY5HyNH1VTeCWncg+ebSlnRb4JK35yiZPYz2vBo9MlF3yaB9kde548nMRLeCRHYuSfyS9N6CudesFXKzvkiIh+WCEWAtf5CVBeQlm9NE3AicRpMgIvVVNSUVQYh145MIwec4iSJERAhEXCDBVXks44nLT2yh5TiLIvwEI6wU1mCriR5Sq3/pOK8NPzKiIGk9zxgNIkREosRbMlVdjyL/2BW4ElRPKlH9OTE5fgowIQFjEV8Bc2cEuT5MNESRDAAIJm88Z2OVDIk41chhBsgQgespvg0XcDgfaXvkKNf0shz7HEWSMAMT+tjfDgQNHZ4f92RhBxpLXvveFnZjZGEEmKp9MRCZ/bJJB/rjmmWt9xH0cjh32ZUsEGSF/UvN0AN0H87soWG/oY4/IlpcgGeRp/osIkkU+pRGNaYyIJZ+qCCGWxohTmieDseT/iwh+/PjxE6R7vwHpwkGS7i/bmgAAAABJRU5ErkJggg==" />
+                                                </li>
+                                                <li title="Python"><img alt="Python"
                                                         src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4IiB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCI+CjxwYXRoIGZpbGw9IiMwMjc3QkQiIGQ9Ik0yNC4wNDcsNWMtMS41NTUsMC4wMDUtMi42MzMsMC4xNDItMy45MzYsMC4zNjdjLTMuODQ4LDAuNjctNC41NDksMi4wNzctNC41NDksNC42N1YxNGg5djJIMTUuMjJoLTQuMzVjLTIuNjM2LDAtNC45NDMsMS4yNDItNS42NzQsNC4yMTljLTAuODI2LDMuNDE3LTAuODYzLDUuNTU3LDAsOS4xMjVDNS44NTEsMzIuMDA1LDcuMjk0LDM0LDkuOTMxLDM0aDMuNjMydi01LjEwNGMwLTIuOTY2LDIuNjg2LTUuODk2LDUuNzY0LTUuODk2aDcuMjM2YzIuNTIzLDAsNS0xLjg2Miw1LTQuMzc3di04LjU4NmMwLTIuNDM5LTEuNzU5LTQuMjYzLTQuMjE4LTQuNjcyQzI3LjQwNiw1LjM1OSwyNS41ODksNC45OTQsMjQuMDQ3LDV6IE0xOS4wNjMsOWMwLjgyMSwwLDEuNSwwLjY3NywxLjUsMS41MDJjMCwwLjgzMy0wLjY3OSwxLjQ5OC0xLjUsMS40OThjLTAuODM3LDAtMS41LTAuNjY0LTEuNS0xLjQ5OEMxNy41NjMsOS42OCwxOC4yMjYsOSwxOS4wNjMsOXoiPjwvcGF0aD48cGF0aCBmaWxsPSIjRkZDMTA3IiBkPSJNMjMuMDc4LDQzYzEuNTU1LTAuMDA1LDIuNjMzLTAuMTQyLDMuOTM2LTAuMzY3YzMuODQ4LTAuNjcsNC41NDktMi4wNzcsNC41NDktNC42N1YzNGgtOXYtMmg5LjM0M2g0LjM1YzIuNjM2LDAsNC45NDMtMS4yNDIsNS42NzQtNC4yMTljMC44MjYtMy40MTcsMC44NjMtNS41NTcsMC05LjEyNUM0MS4yNzQsMTUuOTk1LDM5LjgzMSwxNCwzNy4xOTQsMTRoLTMuNjMydjUuMTA0YzAsMi45NjYtMi42ODYsNS44OTYtNS43NjQsNS44OTZoLTcuMjM2Yy0yLjUyMywwLTUsMS44NjItNSw0LjM3N3Y4LjU4NmMwLDIuNDM5LDEuNzU5LDQuMjYzLDQuMjE4LDQuNjcyQzE5LjcxOSw0Mi42NDEsMjEuNTM2LDQzLjAwNiwyMy4wNzgsNDN6IE0yOC4wNjMsMzljLTAuODIxLDAtMS41LTAuNjc3LTEuNS0xLjUwMmMwLTAuODMzLDAuNjc5LTEuNDk4LDEuNS0xLjQ5OGMwLjgzNywwLDEuNSwwLjY2NCwxLjUsMS40OThDMjkuNTYzLDM4LjMyLDI4Ljg5OSwzOSwyOC4wNjMsMzl6Ij48L3BhdGg+Cjwvc3ZnPg==" />
                                                 </li>
-                                                <li><img alt="JavaScript"
+                                                <li title="JavaScript"><img alt="JavaScript"
                                                         src="data:image/png;base64,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">
                                                 </li>
                                             </ul>
@@ -285,11 +309,11 @@
                                 <div class="content">
                                     <h4 class="title">App Development</h4>
                                     <p class="description">
-                                        I can transform ideas into interactive and innovative mobile
-                                        and web applications. From concept to deployment, I specialize in creating
-                                        user-friendly, feature-rich apps that captivate and engage audience.
+                                        I craft innovative, user-friendly mobile and web apps, turning ideas into
+                                        reality with seamless functionality and engaging designs, deployed successfully
+                                        on platforms like Google Play Store.
                                     </p>
-                                    <a class="read-more-button"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button"><i class="feather-minus"></i></a>
                                 </div>
                             </div>
                             <a class="over-link"></a>
@@ -307,12 +331,11 @@
                                 <div class="content">
                                     <h4 class="title">Programming</h4>
                                     <p class="description">
-                                        I love dive into the world of coding with a passion for
-                                        problem-solving and innovation. My expertise in various programming languages
-                                        ensures the development of efficient and scalable solutions tailored to
-                                        unique needs.
+                                        Passionate about coding, I leverage diverse languages to build efficient,
+                                        scalable solutions, solving complex problems with creativity and precision
+                                        tailored to unique project needs.
                                     </p>
-                                    <a class="read-more-button"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button"><i class="feather-minus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -328,12 +351,11 @@
                                 </div>
                                 <div class="content">
                                     <h4 class="title">UI Design</h4>
-                                    <p class="description">I elevate user experiences with captivating and intuitive
-                                        interfaces. I bring creativity and user-centered design principles together to
-                                        craft visually appealing and user-friendly interfaces that leave a lasting
-                                        impression.
+                                    <p class="description">I design intuitive, visually stunning interfaces that enhance
+                                        user experiences, blending creativity with user-centric principles to create
+                                        memorable and impactful digital designs.
                                     </p>
-                                    <a class="read-more-button"><i class="feather-arrow-right"></i></a>
+                                    <a class="read-more-button"><i class="feather-minus"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -407,7 +429,7 @@
                                                 target="_blank">Play Store <i class="feather-arrow-up-right"></i></a>
                                         </div>
                                         <div class="meta">
-                                            <span>Game Development</span>
+                                            <span>Game</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="https://github.com/shenmareparas/Chess"
@@ -466,7 +488,7 @@
                                                 target="_blank">Play Store <i class="feather-arrow-up-right"></i></a>
                                         </div>
                                         <div class="meta">
-                                            <span>App Development</span>
+                                            <span>App</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="https://github.com/shenmareparas/YoDoc"
@@ -495,11 +517,40 @@
                                                 target="_blank">Play Store <i class="feather-arrow-up-right"></i></a> -->
                                         </div>
                                         <div class="meta">
-                                            <span>App Development</span>
+                                            <span>App</span>
                                         </div>
                                     </div>
                                     <h4 class="title"><a href="https://github.com/shenmareparas/CropShop"
                                             target="_blank">CropShop <i class="feather-github"></i></a></h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Project -->
+
+                    <!-- Start Single Project -->
+                    <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
+                        class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#exampleModalCenter">
+                            <div class="inner">
+                                <div class="thumbnail">
+                                    <a href="https://github.com/shenmareparas/music_player" target="_blank">
+                                        <img src="assets/images/projects/music_player.webp" draggable="false"
+                                            alt="Personal Project Images">
+                                    </a>
+                                </div>
+                                <div class="content">
+                                    <div class="category-info">
+                                        <div class="category-list">
+                                            <!-- <a href="https://play.google.com/store/apps/details?id=com.shenmareparas.yodoc"
+                                                target="_blank">Play Store <i class="feather-arrow-up-right"></i></a> -->
+                                        </div>
+                                        <div class="meta">
+                                            <span>App</span>
+                                        </div>
+                                    </div>
+                                    <h4 class="title"><a href="https://github.com/shenmareparas/music_player"
+                                            target="_blank">Music Player <i class="feather-github"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -1490,6 +1541,9 @@
     <script src="./cursor.js"></script>
     <!-- main JS -->
     <script src="assets/js/main.js"></script>
+</body>
+
+</html>
 </body>
 
 </html>
